@@ -1,0 +1,73 @@
+html, body * {
+    margin: 0;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    background-image: url("Images/bg.jpg");
+}
+
+header {
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    color: rgba(56, 16, 39, 0.819);
+    font-family: "Outfit", sans-serif;
+}
+
+p{
+    color: rgb(54, 0, 153);
+    font-size: 1em;
+}
+.assignments ul {
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+}
+
+.assignments ul li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.assignments ul li a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.assignments ul li a:hover {
+    color: #459e00;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: #777;
+    margin-top: auto;
+}
+
+.description {
+    text-align: center;
+    margin: 20px;
+    width: 500px; 
+    font-family: "Noto Sans", sans-serif;
+    /*https://fonts.google.com/noto/specimen/Noto+Sans*/
+
+}
+
+#sketch-container{
+    margin: 20px; 
+}
