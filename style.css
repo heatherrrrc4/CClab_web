@@ -23,8 +23,17 @@ header {
 
 
 p{
-    color: rgb(54, 0, 153);
+    color: rgb(0, 53, 3);
     font-size: 1em;
+    text-shadow: 
+        2px 2px 0 white,  /* Bottom-right */
+       -2px 2px 0 white,  /* Bottom-left */
+        2px -2px 0 white, /* Top-right */
+       -2px -2px 0 white, /* Top-left */
+        2px 0 0 white,    /* Right */
+       -2px 0 0 white,    /* Left */
+        0 2px 0 white,    /* Bottom */
+        0 -2px 0 white;   /* Top */
 }
 .assignments ul {
     list-style: none;
@@ -38,14 +47,23 @@ p{
 }
 
 .assignments ul li a {
+    text-shadow: 
+        2px 2px 0 white,  /* Bottom-right */
+       -2px 2px 0 white,  /* Bottom-left */
+        2px -2px 0 white, /* Top-right */
+       -2px -2px 0 white, /* Top-left */
+        2px 0 0 white,    /* Right */
+       -2px 0 0 white,    /* Left */
+        0 2px 0 white,    /* Bottom */
+        0 -2px 0 white;   /* Top */
     text-decoration: none;
-    color: #0066cc;
+    color: #482491;
     font-size: 1.2em;
     transition: color 0.3s;
 }
 
 .assignments ul li a:hover {
-    color: #459e00;
+    color: #148cdc;
 }
 
 footer {
@@ -82,3 +100,38 @@ footer {
         color: rgba(56, 16, 39, 0.819);
         font-family: "Outfit", sans-serif;
 }
+
+h2 {
+    color: #482491;
+    font-size: 2em;
+    font-family: "Noto Sans", sans-serif;
+}
+
+/*button*/
+.back-button {
+    position: absolute; /* Position the button in a fixed spot */
+    top: 10px; /* Adjust the distance from the top */
+    left: 10px; /* Adjust the distance from the left */
+    background-color: #fff; /* Button background color */
+    border: none; /* Remove default button border */
+    border-radius: 50%; /* Make the button circular */
+    width: 40px; /* Width of the button */
+    height: 40px; /* Height of the button */
+    display: flex; /* Center the arrow inside the button */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for a polished look */
+    cursor: pointer;
+    text-decoration: none; /* Remove underline for link styling */
+}
+
+.back-button:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+}
+
+.back-button::before {
+    content: '←'; /* Unicode character for a left arrow */
+    font-size: 20px; /* Size of the arrow */
+    color: black; /* Arrow color */
+}
+
