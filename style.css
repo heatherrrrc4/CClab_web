@@ -20,11 +20,7 @@ header {
     margin: 20px;
 }
 
-h1 {
-    font-size: 3em;
-    color: rgba(56, 16, 39, 0.819);
-    font-family: "Outfit", sans-serif;
-}
+
 
 p{
     color: rgb(54, 0, 153);
@@ -70,4 +66,19 @@ footer {
 
 #sketch-container{
     margin: 20px; 
+}
+
+.outlined-text {
+    text-shadow: 
+        2px 2px 0 white,  /* Bottom-right */
+       -2px 2px 0 white,  /* Bottom-left */
+        2px -2px 0 white, /* Top-right */
+       -2px -2px 0 white, /* Top-left */
+        2px 0 0 white,    /* Right */
+       -2px 0 0 white,    /* Left */
+        0 2px 0 white,    /* Bottom */
+        0 -2px 0 white;   /* Top */
+        font-size: 3em;
+        color: rgba(56, 16, 39, 0.819);
+        font-family: "Outfit", sans-serif;
 }
